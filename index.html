@@ -3,39 +3,170 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MI GIT BUSH PAGE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>MI PORTAFOLIO</title>
 </head>
+
 <body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">NICOLE</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#INICIO">INICIO</a></li>
+                    <li><a href="#SOBRE_MI">SOBRE MI</a></li>
+                    <li><a href="#SKILLS">SKILLS</a></li>
+                    <li><a href="#CURRICULUM">CURRICULUM</a></li>
+                    <li><a href="#PORTAFOLIO">PORTAFOLIO</a></li>
+                    <li><a href="#CONTACTO">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </div>
+        </header>
+    </div>
+    
+    <!-- INICIO -->
+    <section id="inicio" class="inicio">
+      <div class="titulo">
+        <h1>¡HOLA!</h1>
+        <h1>MI NOMBRE ES NICOLE ANDREA ESCOBAR, SOY TECNÓLOGO EN SISTEMAS</h1>
+      </div>
+
+        <div class="contenedor-inicio">
+            <div class="contenedor-img">
+                <img src="/img/mifoto.jpg" alt="Foto de Nicole Andrea Escobar">
+            </div>
+            <div class="Redes_Social">
+              <a href="https://wa.link/c7bgbq"><img src="/img/images.jpg" alt="WhatsApp"></a>
+              <a href="https://www.facebook.com/"><img src="/img/facebook.jpg" alt="Facebook"></a>
+              <a href="#"><img src="/img/instagram.jpg" alt="Instagram"></a>
+              <a href="#"><img src="/img/linkedin.jpg" alt="LinkedIn"></a>
+          </div>
+          <div class="texto">
+            <p>Soy estudiante de Sistemas con experiencia 
+                en el desarrollo de soluciones tecnológicas. A lo largo de mis estudios y proyectos, 
+                he adquirido habilidades en programación, desarrollo de aplicaciones y bases de datos, 
+                utilizando tecnologías como C# y metodologías ágiles. Mi enfoque se centra en crear software
+                intuitivo, eficiente y alineado con las necesidades del usuario. A través de mi portafolio,
+                comparto algunos de los proyectos más destacados en los que he trabajado, con el objetivo 
+                de aportar valor y mejorar la experiencia digital.
+              </p>
+          </div>
+        </div>
+    </section>
+
+        <!-- SOBRE MI  -->
+
+    <section id="sobremi" class="sobremi">
+      <div class="contenido-sobremi">
+        <h2>SOBRE MI</h2>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dignissimos, corporis quidem enim atque
+           praesentium nemo ipsa, minus optio delectus nulla ratione suscipit voluptatum ab sunt nesciunt nobis
+            quod est.
+        </P>
+       
+        <div class="fila">       
+            <!-- dats personales-->
+         <div class="col">
+          <h3>DATOS PERSONALES</h3>
+          <ul>
+            <li>
+              <strong>CUMPLEAÑOS</strong>
+              29-06-2005
+            </li>
+            <li>
+              <strong>TELEFONO</strong>
+              3145179774
+            </li>
+            <li>
+              <strong>EMAIL</strong>
+              nicoleandreaa2005@gmail.com
+            </li>
+            <li>
+              <strong>DIRECCIÓN</strong>
+              CIUDAD DEL SUR, CALLE 88B N°22a29
+            </li>
+          </ul>
+         </div>
+           <!-- INTERESES  -->
+            <div class="col">
+              <h3>INTERESES</h3>
+              <div class="contenedor-intereses">
+                <div class="intereses">
+                  <i class="fa-solid fa-gamepad"></i>
+                  <span>JUEGOS</span>
+                </div>
+                <div class="intereses">
+                  <i class="fa-solid fa-music"></i>
+                  <span>MÚSICA</span>
+                </div>
+                <div class="intereses">
+                  <i class="fa-solid fa-book"></i>
+                  <span>LIBROS</span>
+                </div>
+                <div class="intereses">
+                  <i class="fa-solid fa-dumbbell"></i>
+                  <span>DEPORTE</span>
+                </div>
+                <div class="intereses">
+                  <i class="fa-solid fa-plane"></i>
+                  <span>VIAJAR</span>
+                </div>
+                <div class="intereses">
+                  <i class="fa-solid fa-motorcycle"></i>
+                  <span>MOTOS</span>
+                </div>
+              </div>
+            </div>
+        </div>
+        <button>
+          DESCARGAR CV <i class="fa-solid fa-download"></i>
+          <span class="overlay"></span>
+        </button>
+      </div>
+
+
+
+
+
+
+
+
+    </section>
+    
+    <!-- FORMULARIO -->
     <form id="form">
         <div class="field">
-          <label for="from_name">from_name</label>
-          <input type="text" name="from_name" id="from_name">
+            <label for="from_name">From Name</label>
+            <input type="text" name="from_name" id="from_name">
         </div>
         <div class="field">
-          <label for="to_name">to_name</label>
-          <input type="text" name="to_name" id="to_name">
+            <label for="to_name">To Name</label>
+            <input type="text" name="to_name" id="to_name">
         </div>
         <div class="field">
-          <label for="message">message</label>
-          <input type="text" name="message" id="message">
+            <label for="message">Message</label>
+            <input type="text" name="message" id="message">
         </div>
         <div class="field">
-          <label for="reply_to">reply_to</label>
-          <input type="text" name="reply_to" id="reply_to">
+            <label for="reply_to">Reply To</label>
+            <input type="text" name="reply_to" id="reply_to">
         </div>
       
-        <input type="submit" id="button" value="Send Email" >
-      </form>
-      <a href="https://wa.link/c7bgbq"><img src="/img/images.jpg" alt=""></a>
+        <input type="submit" id="button" value="Send Email">
+    </form>
 
-      <script type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-      <script type="text/javascript">
-        emailjs.init('pqeffEpOQorhJgySA')
-      </script>
-         
-      <script src="./main.js"></script>
-    
-      
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+        emailjs.init('pqeffEpOQorhJgySA');
+    </script>
+    <script src="./main.js"></script>
 </body>
 </html>
